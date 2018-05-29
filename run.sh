@@ -1,0 +1,1 @@
+wordcloud_cli.py --text data/felipeko --stopwords stopwords-pt.txt --width 800 --height 600  --no_collocations >png/felipeko.png
