@@ -1,1 +1,1 @@
-wordcloud_cli.py --text data/fuckyou_m8 --stopwords stopwords-pt.txt --width 800 --height 600  --no_collocations >png/fuckyou_m8.png
+wordcloud_cli.py --text data/OsTeclasPretas --stopwords stopwords-pt.txt --width 800 --height 600  --no_collocations >png/OsTeclasPretas.png
