@@ -8,7 +8,7 @@ Passos:
 2) Colocar os dados dessa api num config.ini. Usar o config.ini.tmpl de template
 3) Isso feito, chamar o comando da seguinte forma:
 
-python loaad.py username
+python load.py username
 
 onde username é o usuario que você quer trazer os dados
 
