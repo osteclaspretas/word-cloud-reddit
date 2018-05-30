@@ -1,13 +1,26 @@
 import praw
 import re
 import os.path
+import configparser
+config = configparser.ConfigParser()
+
+import sys
+
+if (len(sys.argv)<2):
+    exit('Erro: precisa informar o nome do usuario')
+
+#import pdb;pdb.set_trace()
+
+config.read('config.ini')
 
 
-reddit = praw.Reddit(client_id='client_id',
-                     client_secret='client_secret',
-                     user_agent='testscript by /u/username')
 
-user_name = "felipeko"
+
+reddit = praw.Reddit(client_id=config['LOAD']['ClientID'],
+                     client_secret=config['LOAD']['ClientSecret'],
+                     user_agent=config['LOAD']['UserAgent'])
+
+user_name = sys.argv[1]
 
 
 comments = []
